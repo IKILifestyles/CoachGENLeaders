@@ -681,7 +681,7 @@ a {
     font-family: var(--font-heading);
     font-size: 24px;
     font-weight: 800;
-    color: rgba(138, 74, 183, 0.2);
+    color: var(--color-insight-purple);
     min-width: 40px;
 }
 
@@ -781,8 +781,13 @@ a {
     }
 
     .framework-visual {
-        height: 300px;
-        margin-bottom: 40px;
+        height: 320px;
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
+
+    .dna-core {
+        transform: scale(0.8);
     }
 }
 
@@ -802,6 +807,14 @@ a {
     .hero-slogan {
         font-size: 18px;
     }
+
+    .mobile-break {
+        display: block;
+    }
+}
+
+.mobile-break {
+    display: none;
 }
 
 /* =========================================
@@ -935,15 +948,29 @@ a {
 .audience-visual::after {
     content: '';
     position: absolute;
-    top: -10px;
-    left: -10px;
-    right: -10px;
-    bottom: -10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    animation: rotateSlowly 10s linear infinite;
+    animation: rotateCentered 10s linear infinite;
     border-left-color: transparent;
     border-right-color: transparent;
+}
+
+.audience-visual::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 1px dashed rgba(47, 183, 200, 0.3);
+    animation: rotateCentered 15s linear infinite reverse;
 }
 
 .bg-trust-blue {
