@@ -771,6 +771,10 @@ a {
 /* =========================================
    RESPONSIVE (Max-width 768px for above structure)
 ========================================= */
+.mobile-break {
+    display: none;
+}
+
 @media (max-width: 992px) {
     .grid-3 {
         grid-template-columns: repeat(2, 1fr);
@@ -788,6 +792,10 @@ a {
 
     .dna-core {
         transform: scale(0.8);
+    }
+
+    .mobile-break {
+        display: block;
     }
 }
 
@@ -807,14 +815,6 @@ a {
     .hero-slogan {
         font-size: 18px;
     }
-
-    .mobile-break {
-        display: block;
-    }
-}
-
-.mobile-break {
-    display: none;
 }
 
 /* =========================================
