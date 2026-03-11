@@ -18,8 +18,27 @@
     <!-- Lucide Icons (via CDN) -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
-    <!-- App Styles -->
+    /* App Styles */
     <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        html,
+        body {
+            overflow-x: hidden;
+        }
+
+        @media (min-width: 769px) {
+            .br-mobile {
+                display: none !important;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .br-mobile {
+                display: block !important;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -37,7 +56,7 @@
                 <a href="#model">Mô hình</a>
                 <a href="#journey">Hành trình</a>
                 <a href="#benefits">Lợi ích</a>
-                <a href="#contact" class="btn-primary btn-sm">Đăng ký để nhận thông tin chi tiết</a>
+                <a href="#contact" class="btn-primary btn-sm">Đăng ký nhận thông tin</a>
             </nav>
 
             <button class="menu-toggle" aria-label="Toggle menu" id="mobile-menu-btn">
@@ -73,7 +92,7 @@
 
             <div class="hero-cta reveal-item delay-4">
                 <a href="#problem" class="btn-secondary">Tìm hiểu thêm</a>
-                <a href="#contact" class="btn-primary glow-effect">Đăng ký để nhận thông tin chi tiết</a>
+                <a href="#contact" class="btn-primary glow-effect">Đăng ký nhận thông tin</a>
             </div>
         </div>
     </section>
@@ -82,7 +101,7 @@
     <section id="problem" class="section problem-sec">
         <div class="container">
             <div class="section-header text-center reveal-item">
-                <h2 class="section-title">Khi lãnh đạo phải có <br class="mobile-break"><span class="gradient-text">mọi
+                <h2 class="section-title">Khi lãnh đạo phải có <br class="br-mobile"><span class="gradient-text">mọi
                         câu trả lời?</span>
                 </h2>
                 <div class="section-divider mx-auto"></div>
@@ -268,7 +287,8 @@
     <section class="section diff-sec">
         <div class="container">
             <div class="section-header text-center reveal-item">
-                <h2 class="section-title">Điều gì làm CoachGEN Leaders <span class="gradient-text">khác biệt</span>
+                <h2 class="section-title">Điều gì làm <br class="br-mobile">CoachGEN Leaders <br class="br-mobile"><span
+                        class="gradient-text">khác biệt</span>
                 </h2>
                 <div class="section-divider mx-auto"></div>
             </div>
@@ -341,7 +361,8 @@
     <section class="section skills-sec">
         <div class="container">
             <div class="section-header text-center reveal-item">
-                <h2 class="section-title">Bạn sẽ học và <span class="gradient-text">thực hành</span></h2>
+                <h2 class="section-title">Bạn sẽ học <br class="br-mobile">và <span class="gradient-text">thực
+                        hành</span></h2>
                 <div class="section-divider mx-auto"></div>
             </div>
 
@@ -384,7 +405,8 @@
     <section id="benefits" class="section benefits-sec bg-light">
         <div class="container">
             <div class="section-header text-center reveal-item">
-                <h2 class="section-title">Lợi ích cho <span class="gradient-text">doanh nghiệp</span></h2>
+                <h2 class="section-title">Lợi ích gì <br class="br-mobile">cho <span class="gradient-text">doanh
+                        nghiệp</span></h2>
                 <div class="section-divider mx-auto"></div>
                 <p class="section-subtitle">Nhiều nghiên cứu quốc tế cho thấy coaching tạo ra tác động rõ rệt tới hiệu
                     quả tổ chức.</p>
@@ -444,7 +466,7 @@
         <div class="container">
             <div class="section-header text-center reveal-item">
                 <h2 class="section-title">Ai nên <span class="gradient-text">tham gia</span> <br
-                        class="mobile-break">chương trình này?</h2>
+                        class="br-mobile">chương trình này?</h2>
                 <div class="section-divider mx-auto"></div>
             </div>
 
@@ -545,9 +567,8 @@
                                 placeholder="Chia sẻ ngắn gọn về mục tiêu phát triển lãnh đạo của bạn..."></textarea>
                         </div>
 
-                        <button type="submit" class="btn-primary glow-effect btn-submit">Đăng ký để nhận thông tin chi
-                            tiết <i data-lucide="send"
-                                style="margin-left: 8px; width: 18px; height: 18px;"></i></button>
+                        <button type="submit" class="btn-primary glow-effect btn-submit">Đăng ký thông tin<i
+                                data-lucide="send" style="margin-left: 8px; width: 18px; height: 18px;"></i></button>
                     </form>
                 </div>
             </div>
