@@ -78,8 +78,12 @@
     <section class="hero">
         <div class="hero-bg">
             <div class="hero-img-overlay"></div>
-            <!-- Recommended: 1920x1080px (Asian professional coaching session) -->
-            <img src="assets/hero-human.jpg" alt="Leadership Coaching" class="hero-main-img" onerror="this.style.display='none'">
+            <!-- Background Video: Recommended 1920x1080px, muted, autoplay, loop -->
+            <video autoplay muted loop playsinline class="hero-video" poster="assets/hero-human.jpg">
+                <source src="assets/hero-bg.mp4" type="video/mp4">
+                <!-- Fallback image if video fails or is unsupported -->
+                <img src="assets/hero-human.jpg" alt="Leadership Coaching" class="hero-main-img" onerror="this.style.display='none'">
+            </video>
             <div class="glow-orb orb-1"></div>
             <div class="glow-orb orb-2"></div>
         </div>
@@ -369,25 +373,27 @@
             
             <div class="experts-grid">
                 <div class="expert-card reveal-item delay-1">
+                    <img src="assets/logo-tuevan (1).png" alt="Tuệ Vấn Logo" class="expert-org-logo" onerror="this.style.display='none'">
                     <div class="expert-image-wrapper">
-                        <img src="assets/expert-1.jpg" alt="Chuyên gia Tuệ Vân" class="expert-img" onerror="this.style.display='none'">
+                        <img src="assets/expert-1.jpg" alt="Nguyễn Mạnh Hải" class="expert-img" onerror="this.style.display='none'">
                     </div>
                     <div class="expert-info">
-                        <p class="expert-label">Coaching & Mentoring</p>
-                        <h3>Chuyên gia Tuệ Vấn</h3>
-                        <p class="expert-title">Tuệ Vấn Excellence Partnership</p>
-                        <p class="expert-bio">Hơn 15 năm kinh nghiệm đồng hành cùng lãnh đạo cấp cao trong hành trình chuyển đổi tư duy.</p>
+                        <p class="expert-label">ICF PCC - Tuệ Vấn</p>
+                        <h3>Nguyễn Mạnh Hải <img src="assets/ICF PCC.png" alt="ICF PCC" class="icf-badge" onerror="this.style.display='none'"></h3>
+                        <p class="expert-title">Đồng sáng lập Tuệ Vấn</p>
+                        <p class="expert-bio">Coach chứng nhận PCC của ICF và ITCA Senior Practitioner của EMCC với hơn 2.000 giờ coaching. Hơn 20 năm kinh nghiệm quản lý, Thạc sĩ MBA tại IE Business School.</p>
                     </div>
                 </div>
                 <div class="expert-card reveal-item delay-2">
+                    <img src="assets/logo-trust.png" alt="TRUST Logo" class="expert-org-logo" onerror="this.style.display='none'">
                     <div class="expert-image-wrapper">
-                        <img src="assets/expert-2.jpg" alt="Chuyên gia TRUST" class="expert-img" onerror="this.style.display='none'">
+                        <img src="assets/expert-2.jpg" alt="Cecilia Anh Vân" class="expert-img" onerror="this.style.display='none'">
                     </div>
                     <div class="expert-info">
-                        <p class="expert-label">Facilitation & Leadership</p>
-                        <h3>Chuyên gia TRUST</h3>
-                        <p class="expert-title">TRUST Leadership Consulting</p>
-                        <p class="expert-bio">Chuyên gia dẫn dắt các tiến trình khai phá trí tuệ tập thể và xây dựng văn hóa đội ngũ.</p>
+                        <p class="expert-label">ICF PCC - TRUST</p>
+                        <h3>Cecilia Anh Vân <img src="assets/ICF PCC.png" alt="ICF PCC" class="icf-badge" onerror="this.style.display='none'"></h3>
+                        <p class="expert-title">Đồng sáng lập TRUST Coaching & Consulting</p>
+                        <p class="expert-bio">Chuyên gia định vị bản thân với hơn 20 năm trong lĩnh vực truyền thông và 10 năm phát triển con người. Tiên phong về Nghệ thuật viết Content từ tim.</p>
                     </div>
                 </div>
             </div>
@@ -404,17 +410,20 @@
             </div>
             <div class="community-gallery">
                 <div class="gallery-item large reveal-item delay-1">
-                    <img src="assets/community-1.jpg" alt="Community 1" class="gallery-img" onerror="this.style.display='none'">
+                    <img src="assets/comm-1.jpg" alt="Community 1" class="gallery-img" onerror="this.style.display='none'">
                     <div class="gallery-overlay"><span>Buổi thảo luận nhóm thực tế</span></div>
                 </div>
                 <div class="gallery-item reveal-item delay-2">
-                    <img src="assets/community-2.jpg" alt="Community 2" class="gallery-img" onerror="this.style.display='none'">
+                    <img src="assets/comm-2.jpg" alt="Community 2" class="gallery-img" onerror="this.style.display='none'">
                 </div>
                 <div class="gallery-item reveal-item delay-3">
-                    <img src="assets/community-3.jpg" alt="Community 3" class="gallery-img" onerror="this.style.display='none'">
+                    <img src="assets/comm-3.jpg" alt="Community 3" class="gallery-img" onerror="this.style.display='none'">
                 </div>
                 <div class="gallery-item reveal-item delay-4">
-                    <img src="assets/community-4.jpg" alt="Community 4" class="gallery-img" onerror="this.style.display='none'">
+                    <img src="assets/comm-4.jpg" alt="Community 4" class="gallery-img" onerror="this.style.display='none'">
+                </div>
+                <div class="gallery-item reveal-item delay-5">
+                    <img src="assets/comm-5.jpg" alt="Community 5" class="gallery-img" onerror="this.style.display='none'">
                 </div>
             </div>
         </div>
@@ -574,7 +583,7 @@
                 <!-- Tuệ Vấn -->
                 <div class="partner-card reveal-item delay-1">
                     <div class="partner-logo-wrapper">
-                        <img src="assets/logo-tuevan.jpg" alt="Tuệ Vấn Logo" class="partner-logo">
+                        <img src="assets/logo-tuevan (1).png" alt="Tuệ Vấn Logo" class="partner-logo">
                     </div>
                     <div class="partner-content">
                         <h3>Tuệ Vấn Excellence</h3>
@@ -608,7 +617,7 @@
                 <!-- TRUST -->
                 <div class="partner-card reveal-item delay-2">
                     <div class="partner-logo-wrapper">
-                        <img src="assets/logo-trust.jpg" alt="TRUST Logo" class="partner-logo">
+                        <img src="assets/logo-trust.png" alt="TRUST Logo" class="partner-logo">
                     </div>
                     <div class="partner-content">
                         <h3>TRUST Coaching & Consulting</h3>
