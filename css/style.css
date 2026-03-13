@@ -2746,14 +2746,151 @@ select {
 }
 
 .nav-partner-logo {
-    height: 20px;
+    height: 36px;
     width: auto;
     filter: brightness(0) invert(1);
-    opacity: 0.85;
+    opacity: 0.9;
+}
+
+.logo-divider {
+    height: 30px;
 }
 
 @media (max-width: 576px) {
-    .logo-divider, .partner-logos {
-        display: none;
+    .nav-partner-logo {
+        height: 22px;
+    }
+
+    .logo-group {
+        gap: 10px;
+    }
+
+    .partner-logos {
+        gap: 8px;
+    }
+}
+
+/* =========================================
+   MOBILE OVERFLOW FIXES
+   ========================================= */
+@media (max-width: 768px) {
+    /* Hero pricing block - prevent overflow */
+    .hero-pricing-block {
+        padding: 0 5px;
+    }
+
+    .hero-pricing-block .pricing-card {
+        padding: 12px 8px;
+    }
+
+    .pricing-amount-main .amount {
+        font-size: clamp(36px, 10vw, 50px);
+    }
+
+    .pricing-amount-main .currency {
+        font-size: 20px;
+        margin-top: 8px;
+    }
+
+    .promo-dotted-box {
+        flex-direction: column;
+        gap: 12px;
+        padding: 12px 16px;
+        max-width: 100%;
+    }
+
+    .early-bird-gradient-badge {
+        font-size: 16px;
+        padding: 8px 20px;
+    }
+
+    .promo-deadline-text {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    .accred-title {
+        font-size: 14px;
+    }
+
+    .accred-names {
+        font-size: 12px;
+    }
+
+    .program-framework-badge {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .pricing-label-top {
+        font-size: 14px;
+    }
+
+    .accred-logos-small {
+        gap: 15px;
+        padding: 8px 15px;
+    }
+
+    .accred-logos-small img {
+        height: 28px;
+    }
+
+    /* Problem section image - prevent overflow */
+    .problem-img-resized {
+        max-width: 100% !important;
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .problem-visual {
+        padding: 0 10px;
+    }
+
+    /* Contact section - prevent pricing & form overflow */
+    .contact-grid {
+        padding: 0 5px;
+    }
+
+    .contact-info {
+        overflow: hidden;
+    }
+
+    .pricing-card {
+        padding: 16px 12px !important;
+    }
+
+    .contact-form-wrapper {
+        padding: 20px 15px;
+    }
+
+    .price-main {
+        font-size: 30px;
+    }
+
+    .form-title {
+        font-size: 20px;
+    }
+
+    .form-subtitle {
+        font-size: 14px;
+    }
+
+    /* Hero section CTA bottom margin */
+    .hero-cta {
+        margin-bottom: 60px !important;
+    }
+
+    /* Ensure hero content doesn't overflow */
+    .hero-content {
+        padding: 0 10px;
+    }
+
+    .hero-subtext {
+        font-size: 15px;
+    }
+
+    .hero-badge {
+        font-size: 12px;
+        padding: 6px 14px;
     }
 }
