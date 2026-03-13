@@ -46,17 +46,24 @@
     <!-- Header / Navbar -->
     <header class="navbar" id="navbar">
         <div class="container navbar-container">
-            <a href="#" class="logo">
-                <span class="logo-text">CoachGEN</span>
-                <span class="logo-dot"></span>
-            </a>
+            <div class="logo-group">
+                <a href="#" class="logo">
+                    <span class="logo-text">CoachGEN</span>
+                    <span class="logo-dot"></span>
+                </a>
+                <div class="logo-divider"></div>
+                <div class="partner-logos">
+                    <img src="assets/logo-tuevan.png" alt="Tuệ Vấn" class="nav-partner-logo">
+                    <img src="assets/logo-trust.png" alt="TRUST" class="nav-partner-logo">
+                </div>
+            </div>
 
             <nav class="nav-links">
-                <a href="#problem">Tại sao</a>
-                <a href="#model">Mô hình</a>
-                <a href="#journey">Hành trình</a>
-                <a href="#benefits">Lợi ích</a>
-                <a href="#contact" class="btn-primary btn-sm">Đăng ký nhận thông tin</a>
+                <a href="#problem">Thông tin</a>
+                <a href="#philosophy">Giải pháp</a>
+                <a href="#journey">Cấu trúc</a>
+                <a href="#experts">Đội ngũ</a>
+                <a href="#contact" class="btn-primary btn-sm">Đăng ký ngay</a>
             </nav>
 
             <button class="menu-toggle" aria-label="Toggle menu" id="mobile-menu-btn">
@@ -66,22 +73,21 @@
 
         <!-- Mobile Nav -->
         <div class="mobile-nav" id="mobile-nav">
-            <a href="#problem">Tại sao</a>
-            <a href="#model">Mô hình</a>
-            <a href="#journey">Hành trình</a>
-            <a href="#benefits">Lợi ích</a>
+            <a href="#problem">Thông tin</a>
+            <a href="#philosophy">Giải pháp</a>
+            <a href="#journey">Cấu trúc</a>
+            <a href="#experts">Đội ngũ</a>
             <a href="#contact" class="btn-primary" style="display:inline-block; margin-top: 1rem;">Đăng ký</a>
         </div>
     </header>
 
-    <!-- Hero Section -->
+
+    <!-- 1. Hero Section -->
     <section class="hero">
         <div class="hero-bg">
             <div class="hero-img-overlay"></div>
-            <!-- Background Video: Recommended 1920x1080px, muted, autoplay, loop -->
             <video autoplay muted loop playsinline class="hero-video" id="heroVideo" poster="assets/hero-human.jpg">
                 <source src="assets/hero-human.mp4" type="video/mp4">
-                <!-- Fallback image if video fails or is unsupported -->
                 <img src="assets/hero-human.jpg" alt="Leadership Coaching" class="hero-main-img" onerror="this.style.display='none'">
             </video>
             <div class="glow-orb orb-1"></div>
@@ -95,20 +101,78 @@
             <p class="hero-subtext reveal-item delay-3">Phát triển con người và đội nhóm thông qua coaching, mentoring
                 và facilitation.<br>Chương trình hợp tác giữa <strong>Tuệ Vấn × TRUST</strong></p>
 
-            <div class="hero-cta reveal-item delay-4">
+            <!-- HERO PRICING BLOCK -->
+            <div class="hero-pricing-block reveal-item delay-3" style="margin-top: 0;">
+                <div class="pricing-card mx-auto" style="max-width: 800px;">
+                    <div class="pricing-divider"></div>
+                    <div class="program-details">
+                        <div class="pricing-accreditation text-center">
+                            <p class="accred-title">Chuẩn quốc tế dựa trên chuẩn năng lực quốc tế</p>
+                            <div class="accred-logos-small mx-auto">
+                                <img src="assets/logo-icf.png" alt="ICF">
+                                <img src="assets/logo-ac.png" alt="AC">
+                                <img src="assets/logo-iaf.png" alt="IAF">
+                            </div>
+                            <p class="accred-names">
+                                International Coaching Federation (ICF)<br>
+                                Association for Coaching (AC)<br>
+                                International Association of Facilitators (IAF)
+                            </p>
+                            <p class="program-framework-badge">Một chương trình thuộc khung <strong>CoachGEN Leadership</strong></p>
+                        </div>
+                        
+                        <div class="pricing-divider" style="margin: 8px 0;"></div>
+
+                        <div class="screenshot-pricing-ui">
+                            <p class="pricing-label-top">HỌC PHÍ CHƯƠNG TRÌNH</p>
+                            <div class="pricing-amount-main">
+                                <span class="amount">30.000.000</span>
+                                <span class="currency">VNĐ</span>
+                            </div>
+                            
+                            <div class="promo-dotted-box">
+                                <div class="early-bird-gradient-badge">Early Bird -25%</div>
+                                <div class="promo-deadline-text">Trước ngày 01/04/2026</div>
+                            </div>
+                        </div>
+
+                        <div class="pricing-divider" style="margin: 8px 0;"></div>
+
+                        <div class="details-row">
+                            <div class="detail-item">
+                                <i data-lucide="calendar"></i>
+                                <div>
+                                    <span class="detail-label">Thời gian</span>
+                                    <span class="detail-value text-dark-blue">
+                                        <strong>10, 11, 12/04</strong> Tại Hà Nội<br>
+                                        <strong>17, 18, 19/04</strong> Tại TP.HCM
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i data-lucide="users"></i>
+                                <div>
+                                    <span class="detail-label">Số lượng học viên</span>
+                                    <span class="detail-value text-dark-blue"><strong>Tối đa 15 người</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-cta reveal-item delay-4" style="margin-top: 20px; padding: 0 30px; margin-bottom: 120px;">
                 <a href="#problem" class="btn-secondary">Tìm hiểu thêm</a>
                 <a href="#contact" class="btn-primary glow-effect">Đăng ký</a>
             </div>
         </div>
     </section>
 
-    <!-- Problem Section -->
+    <!-- 2. Nỗi đau: Problem Section + Leaders -->
     <section id="problem" class="section problem-sec">
         <div class="container">
             <div class="section-header text-center reveal-item">
-                <h2 class="section-title">Khi lãnh đạo phải có <br class="br-mobile"><span class="gradient-text">mọi
-                        câu trả lời?</span>
-                </h2>
+                <h2 class="section-title">Khi lãnh đạo phải có <br class="br-mobile"><span class="gradient-text">mọi câu trả lời?</span></h2>
                 <div class="section-divider mx-auto"></div>
             </div>
 
@@ -120,8 +184,7 @@
                         <li><i data-lucide="arrow-right"></i>Giải quyết mọi vấn đề của đội nhóm</li>
                         <li><i data-lucide="arrow-right"></i>Kiểm soát kết quả công việc</li>
                     </ul>
-                    <p class="problem-bridge">Trong ngắn hạn, điều này có thể hiệu quả. Nhưng theo thời gian, nó tạo
-                        ra một <strong>vòng lặp quen thuộc:</strong></p>
+                    <p class="problem-bridge">Trong ngắn hạn, điều này có thể hiệu quả. Nhưng theo thời gian, nó tạo ra một <strong>vòng lặp quen thuộc:</strong></p>
                 </div>
 
                 <div class="problem-right reveal-item delay-2">
@@ -140,6 +203,10 @@
                 </div>
             </div>
 
+            <div class="problem-visual reveal-item delay-3" style="margin-top: 50px; text-align: center;">
+                <img src="assets/comm-1.jpg" alt="CoachGEN Practice" class="problem-img-resized" style="border-radius: 20px; box-shadow: var(--shadow-lg);">
+            </div>
+
             <div class="problem-insight reveal-item delay-3">
                 <blockquote>
                     Tổ chức có những lãnh đạo rất bận.<br>
@@ -149,55 +216,11 @@
                     Bởi vì lãnh đạo không phải là một vị trí. Lãnh đạo là một thực hành.
                 </blockquote>
             </div>
+
         </div>
     </section>
 
-    <!-- Famous Leaders Section -->
-    <section class="section quotes-sec bg-light">
-        <div class="container">
-            <div class="section-header text-center reveal-item">
-                <h2 class="section-title">Lãnh đạo nổi tiếng có cần <span class="gradient-text">coach</span> không?
-                </h2>
-                <div class="section-divider mx-auto"></div>
-                <p class="section-subtitle">Có! Các lãnh đạo hàng đầu thế giới cũng làm việc với coach để phát triển
-                    bản thân và tổ chức.</p>
-            </div>
-
-            <div class="grid-2x2">
-                <div class="leader-quote-card reveal-item delay-1">
-                    <img src="assets/bill-gates.png" alt="Bill Gates" class="leader-avatar">
-                    <h4>Bill Gates <span class="role-tag">Former CEO Microsoft</span></h4>
-                    <p>"Everyone needs a coach. We all need people who will give us feedback."</p>
-                </div>
-                <div class="leader-quote-card reveal-item delay-2">
-                    <img src="assets/eric-schmidt.png" alt="Eric Schmidt" class="leader-avatar">
-                    <h4>Eric Schmidt <span class="role-tag">Former CEO Google</span></h4>
-                    <p>"The best advice I ever got was to get a coach."</p>
-                </div>
-                <div class="leader-quote-card reveal-item delay-3">
-                    <img src="assets/steve-jobs.png" alt="Steve Jobs" class="leader-avatar">
-                    <h4>Steve Jobs <span class="role-tag">Former CEO Apple</span></h4>
-                    <p>Đã làm việc với Bill Campbell – người được gọi là "The Trillion Dollar Coach".</p>
-                </div>
-                <div class="leader-quote-card reveal-item delay-4">
-                    <img src="assets/sheryl-sandberg.png" alt="Sheryl Sandberg" class="leader-avatar">
-                    <h4>Sheryl Sandberg <span class="role-tag">Former COO Meta</span></h4>
-                    <p>Sử dụng executive coaching để phát triển năng lực lãnh đạo trong những giai đoạn quan trọng của
-                        sự nghiệp.</p>
-                </div>
-            </div>
-
-            <div class="text-center reveal-item delay-3"
-                style="margin-top: 50px; max-width: 700px; margin-left: auto; margin-right: auto;">
-                <p style="font-size: 18px; color: var(--color-gray-800);">Điểm chung của những lãnh đạo này không phải là họ yếu kém.<br>
-                    <strong>Ngược lại.</strong><br>
-                    Họ hiểu rằng những người muốn trở nên giỏi hơn luôn cần<br>
-                    <strong><em>Một không gian để suy nghĩ và phản tư.</em></strong></p>
-            </div>
-        </div>
-    </section>
-
-    <!-- CoachGEN Leadership Philosophy Section -->
+    <!-- 3. Giải pháp: Philosophy + Model -->
     <section id="philosophy" class="section philosophy-sec">
         <div class="container">
             <div class="section-header text-center reveal-item">
@@ -216,8 +239,7 @@
                 <div class="concept-card reveal-item delay-1">
                     <div class="icon-wrapper"><i data-lucide="message-circle"></i></div>
                     <h3>Coaching</h3>
-                    <p>Giúp con người suy nghĩ rõ hơn – không phải bằng cách kiểm soát, mà bằng cách khơi mở tư duy.
-                    </p>
+                    <p>Giúp con người suy nghĩ rõ hơn – không phải bằng cách kiểm soát, mà bằng cách khơi mở tư duy.</p>
                 </div>
                 <div class="concept-card reveal-item delay-2">
                     <div class="icon-wrapper"><i data-lucide="hand-helping"></i></div>
@@ -227,16 +249,12 @@
                 <div class="concept-card reveal-item delay-3">
                     <div class="icon-wrapper"><i data-lucide="users"></i></div>
                     <h3>Facilitation</h3>
-                    <p>Khai thác trí tuệ tập thể của đội nhóm – xây dựng những đội ngũ có thể cùng nhau tiến xa hơn.
-                    </p>
+                    <p>Khai thác trí tuệ tập thể của đội nhóm – xây dựng những đội ngũ có thể cùng nhau tiến xa hơn.</p>
                 </div>
             </div>
-
-            <!-- Removed repetitive section as it's now integrated above -->
         </div>
     </section>
 
-    <!-- CoachGEN Leadership Model -->
     <section id="model" class="section framework-sec bg-light">
         <div class="container">
             <div class="section-header text-center reveal-item">
@@ -286,13 +304,87 @@
         </div>
     </section>
 
-    <!-- Why Different Section -->
+    <!-- 4. Cấu trúc chương trình: Journey -->
+    <section id="journey" class="section journey-sec">
+        <div class="container text-center">
+            <div class="section-header reveal-item">
+                <h2 class="section-title">Hành trình <span class="gradient-text">học tập</span></h2>
+                <div class="section-divider mx-auto"></div>
+            </div>
+
+            <div class="journey-visual reveal-item delay-1" style="margin-bottom: 40px;">
+                <img src="assets/asian_professionals_learning_journey_1773399893962.png" alt="Hành trình học tập CoachGEN" class="journey-img-refined" style="max-width: 800px; width: 100%; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+            </div>
+
+            <div class="timeline-horizontal reveal-item delay-2">
+                <div class="timeline-line"></div>
+                <div class="timeline-step">
+                    <div class="step-dot">1</div>
+                    <h4>Leadership Reset</h4>
+                    <p>3 ngày học trực tiếp – khám phá lại cách hiểu về lãnh đạo, thực hành coaching conversations, mentoring & facilitation.</p>
+                </div>
+                <div class="timeline-step">
+                    <div class="step-dot">2</div>
+                    <h4>Guided Practice</h4>
+                    <p>3 tháng thực hành – coaching conversations hàng tuần, cộng đồng thực hành với phản hồi từ giảng viên và bạn học.</p>
+                </div>
+                <div class="timeline-step">
+                    <div class="step-dot">3</div>
+                    <h4>Leadership Breakthrough</h4>
+                    <p>Tổng kết và tích hợp – chia sẻ bài học, củng cố năng lực lãnh đạo mới, xác định bước phát triển tiếp theo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Phương pháp: Skills & Tools -->
+    <section id="skills" class="section skills-sec bg-light">
+        <div class="container">
+            <div class="section-header text-center reveal-item">
+                <h2 class="section-title">Bạn sẽ học <br class="br-mobile">và <span class="gradient-text">thực hành</span></h2>
+                <div class="section-divider mx-auto"></div>
+            </div>
+
+            <div class="grid-3">
+                <div class="concept-card reveal-item delay-1">
+                    <div class="icon-wrapper"><i data-lucide="message-square"></i></div>
+                    <h3>Coaching Conversations</h3>
+                    <p>Dẫn dắt các cuộc đối thoại giúp nhân viên suy nghĩ rõ hơn.</p>
+                </div>
+                <div class="concept-card reveal-item delay-2">
+                    <div class="icon-wrapper"><i data-lucide="help-circle"></i></div>
+                    <h3>Powerful Questions</h3>
+                    <p>Kỹ thuật đặt câu hỏi giúp mở rộng tư duy.</p>
+                </div>
+                <div class="concept-card reveal-item delay-3">
+                    <div class="icon-wrapper"><i data-lucide="message-circle-heart"></i></div>
+                    <h3>Developmental Feedback</h3>
+                    <p>Đưa ra feedback giúp phát triển năng lực.</p>
+                </div>
+                <div class="concept-card reveal-item delay-1">
+                    <div class="icon-wrapper"><i data-lucide="compass"></i></div>
+                    <h3>Mentoring for Growth</h3>
+                    <p>Chia sẻ kinh nghiệm lãnh đạo theo cách khơi mở suy nghĩ.</p>
+                </div>
+                <div class="concept-card reveal-item delay-2">
+                    <div class="icon-wrapper"><i data-lucide="presentation"></i></div>
+                    <h3>Facilitation for Team Thinking</h3>
+                    <p>Thiết kế và dẫn dắt các cuộc họp nhóm hiệu quả.</p>
+                </div>
+                <div class="concept-card reveal-item delay-3">
+                    <div class="icon-wrapper"><i data-lucide="scan-eye"></i></div>
+                    <h3>Reflective Leadership</h3>
+                    <p>Phương pháp phản tư giúp lãnh đạo học hỏi từ trải nghiệm.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. USP: Why Different -->
     <section class="section diff-sec">
         <div class="container">
             <div class="section-header text-center reveal-item">
-                <h2 class="section-title">Điều gì làm <br class="br-mobile">CoachGEN Leaders <br class="br-mobile"><span
-                        class="gradient-text">khác biệt</span>
-                </h2>
+                <h2 class="section-title">Điều gì làm <br class="br-mobile">CoachGEN Leaders <br class="br-mobile"><span class="gradient-text">khác biệt</span></h2>
                 <div class="section-divider mx-auto"></div>
             </div>
 
@@ -300,67 +392,71 @@
                 <div class="service-card reveal-item delay-1">
                     <div class="service-icon"><i data-lucide="layers"></i></div>
                     <h3>Coaching không đứng một mình</h3>
-                    <p>Kết hợp coaching, mentoring và facilitation – ba năng lực giúp lãnh đạo phát triển tư duy cá
-                        nhân, hỗ trợ sự trưởng thành của nhân viên, và khai thác trí tuệ tập thể.</p>
+                    <p>Kết hợp coaching, mentoring và facilitation – ba năng lực giúp lãnh đạo phát triển tư duy cá nhân, hỗ trợ sự trưởng thành của nhân viên, và khai thác trí tuệ tập thể.</p>
                 </div>
                 <div class="service-card reveal-item delay-2">
                     <div class="service-icon"><i data-lucide="calendar-range"></i></div>
                     <h3>Hơn cả một lớp học</h3>
-                    <p>Bao gồm 3 tháng thực hành có hướng dẫn, giúp áp dụng vào công việc, nhận phản hồi và xây dựng
-                        thói quen lãnh đạo mới.</p>
+                    <p>Bao gồm 3 tháng thực hành có hướng dẫn, giúp áp dụng vào công việc, nhận phản hồi và xây dựng thói quen lãnh đạo mới.</p>
                 </div>
                 <div class="service-card reveal-item delay-3">
                     <div class="service-icon"><i data-lucide="footprints"></i></div>
                     <h3>Lãnh đạo bằng hành động</h3>
-                    <p>Không chỉ dạy lý thuyết. Chương trình đi cùng người học trong suốt tiến trình thay đổi cách hiểu
-                        và cách thực hành lãnh đạo.</p>
+                    <p>Không chỉ dạy lý thuyết. Chương trình đi cùng người học trong suốt tiến trình thay đổi cách hiểu và cách thực hành lãnh đạo.</p>
                 </div>
                 <div class="service-card reveal-item delay-4">
                     <div class="service-icon"><i data-lucide="award"></i></div>
                     <h3>Dựa trên chuẩn quốc tế</h3>
-                    <p>Tham chiếu các khung năng lực của ICF (International Coaching Federation), AC (Association for
-                        Coaching), IAF (International Association of Facilitators).</p>
+                    <p>Tham chiếu các khung năng lực của ICF (International Coaching Federation), AC (Association for Coaching), IAF (International Association of Facilitators).</p>
+                </div>
+            </div>
+
+            <div class="diff-visual-evidence reveal-item delay-4" style="margin-top: 60px;">
+                <div class="mini-gallery">
+                    <div class="mini-gallery-item"><img src="assets/comm-2.jpg" alt="Practice 1"></div>
+                    <div class="mini-gallery-item"><img src="assets/comm-3.jpg" alt="Practice 2"></div>
+                    <div class="mini-gallery-item"><img src="assets/comm-4.jpg" alt="Practice 3"></div>
+                    <div class="mini-gallery-item"><img src="assets/comm-5.jpg" alt="Practice 4"></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Learning Journey Section -->
-    <section id="journey" class="section journey-sec bg-light">
-        <div class="container text-center">
-            <div class="section-header reveal-item">
-                <h2 class="section-title">Hành trình <span class="gradient-text">học tập</span></h2>
+    <!-- 7. Đối tượng: Target Audience -->
+    <section id="audience" class="section audience-sec bg-light">
+        <div class="container">
+            <div class="section-header text-center reveal-item">
+                <h2 class="section-title">Ai nên <span class="gradient-text">tham gia</span> <br class="br-mobile">chương trình này?</h2>
                 <div class="section-divider mx-auto"></div>
             </div>
 
-            <div class="timeline-horizontal reveal-item delay-2">
-                <div class="timeline-line"></div>
-
-                <div class="timeline-step">
-                    <div class="step-dot">1</div>
-                    <h4>Leadership Reset</h4>
-                    <p>3 ngày học trực tiếp – khám phá lại cách hiểu về lãnh đạo, thực hành coaching conversations,
-                        mentoring & facilitation.</p>
+            <div class="grid-3">
+                <div class="audience-card reveal-item delay-1">
+                    <div class="audience-visual bg-trust-blue">
+                        <i data-lucide="briefcase" class="giant-icon-light"></i>
+                    </div>
+                    <h3>Lãnh đạo & Quản lý</h3>
+                    <p>Muốn phát triển đội ngũ thay vì phải tự mình giải quyết mọi vấn đề.</p>
                 </div>
-
-                <div class="timeline-step">
-                    <div class="step-dot">2</div>
-                    <h4>Guided Practice</h4>
-                    <p>3 tháng thực hành – coaching conversations hàng tuần, cộng đồng thực hành với phản hồi từ giảng
-                        viên và bạn học.</p>
+                <div class="audience-card reveal-item delay-2">
+                    <div class="audience-visual bg-insight-blue">
+                        <i data-lucide="graduation-cap" class="giant-icon-light"></i>
+                    </div>
+                    <h3>HR / L&D</h3>
+                    <p>Đang xây dựng văn hóa coaching trong tổ chức.</p>
                 </div>
-
-                <div class="timeline-step">
-                    <div class="step-dot">3</div>
-                    <h4>Leadership Breakthrough</h4>
-                    <p>Tổng kết và tích hợp – chia sẻ bài học, củng cố năng lực lãnh đạo mới, xác định bước phát triển
-                        tiếp theo.</p>
+                <div class="audience-card reveal-item delay-3">
+                    <div class="audience-visual bg-insight-purple">
+                        <i data-lucide="flag" class="giant-icon-light"></i>
+                    </div>
+                    <h3>Người dẫn dắt đội nhóm</h3>
+                    <p>Trưởng dự án, trưởng bộ phận, leader trong các tổ chức giáo dục, phi lợi nhuận.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Experts Section -->
+    <!-- 8. Đội ngũ chuyên gia -->
     <section id="experts" class="section experts-sec">
         <div class="container">
             <div class="section-header text-center reveal-item">
@@ -445,177 +541,7 @@
         </div>
     </section>
 
-    <!-- Community Section -->
-    <section class="section community-sec bg-light">
-        <div class="container">
-            <div class="section-header text-center reveal-item">
-                <h2 class="section-title">Cộng đồng <span class="gradient-text">CoachGEN</span></h2>
-                <div class="section-divider mx-auto"></div>
-                <p class="section-subtitle">Nơi kết nối những lãnh đạo thực hành - thực chất.</p>
-            </div>
-            <div class="community-gallery">
-                <div class="gallery-item large reveal-item delay-1">
-                    <img src="assets/comm-1.jpg" alt="Community 1" class="gallery-img" onerror="this.style.display='none'">
-                    <div class="gallery-overlay"><span>Buổi thảo luận nhóm thực tế</span></div>
-                </div>
-                <div class="gallery-item reveal-item delay-2">
-                    <img src="assets/comm-2.jpg" alt="Community 2" class="gallery-img" onerror="this.style.display='none'">
-                </div>
-                <div class="gallery-item reveal-item delay-3">
-                    <img src="assets/comm-3.jpg" alt="Community 3" class="gallery-img" onerror="this.style.display='none'">
-                </div>
-                <div class="gallery-item reveal-item delay-4">
-                    <img src="assets/comm-4.jpg" alt="Community 4" class="gallery-img" onerror="this.style.display='none'">
-                </div>
-                <div class="gallery-item reveal-item delay-5">
-                    <img src="assets/comm-5.jpg" alt="Community 5" class="gallery-img" onerror="this.style.display='none'">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills & Tools Section -->
-    <section class="section skills-sec">
-        <div class="container">
-            <div class="section-header text-center reveal-item">
-                <h2 class="section-title">Bạn sẽ học <br class="br-mobile">và <span class="gradient-text">thực
-                        hành</span></h2>
-                <div class="section-divider mx-auto"></div>
-            </div>
-
-            <div class="grid-3">
-                <div class="concept-card reveal-item delay-1">
-                    <div class="icon-wrapper"><i data-lucide="message-square"></i></div>
-                    <h3>Coaching Conversations</h3>
-                    <p>Dẫn dắt các cuộc đối thoại giúp nhân viên suy nghĩ rõ hơn.</p>
-                </div>
-                <div class="concept-card reveal-item delay-2">
-                    <div class="icon-wrapper"><i data-lucide="help-circle"></i></div>
-                    <h3>Powerful Questions</h3>
-                    <p>Kỹ thuật đặt câu hỏi giúp mở rộng tư duy.</p>
-                </div>
-                <div class="concept-card reveal-item delay-3">
-                    <div class="icon-wrapper"><i data-lucide="message-circle-heart"></i></div>
-                    <h3>Developmental Feedback</h3>
-                    <p>Đưa ra feedback giúp phát triển năng lực.</p>
-                </div>
-                <div class="concept-card reveal-item delay-1">
-                    <div class="icon-wrapper"><i data-lucide="compass"></i></div>
-                    <h3>Mentoring for Growth</h3>
-                    <p>Chia sẻ kinh nghiệm lãnh đạo theo cách khơi mở suy nghĩ.</p>
-                </div>
-                <div class="concept-card reveal-item delay-2">
-                    <div class="icon-wrapper"><i data-lucide="presentation"></i></div>
-                    <h3>Facilitation for Team Thinking</h3>
-                    <p>Thiết kế và dẫn dắt các cuộc họp nhóm hiệu quả.</p>
-                </div>
-                <div class="concept-card reveal-item delay-3">
-                    <div class="icon-wrapper"><i data-lucide="scan-eye"></i></div>
-                    <h3>Reflective Leadership</h3>
-                    <p>Phương pháp phản tư giúp lãnh đạo học hỏi từ trải nghiệm.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Business Benefits Section -->
-    <section id="benefits" class="section benefits-sec bg-light">
-        <div class="container">
-            <div class="section-header text-center reveal-item">
-                <h2 class="section-title">Lợi ích gì <br class="br-mobile">cho <span class="gradient-text">doanh
-                        nghiệp</span></h2>
-                <div class="section-divider mx-auto"></div>
-                <p class="section-subtitle">Nhiều nghiên cứu quốc tế cho thấy coaching tạo ra tác động rõ rệt tới hiệu
-                    quả tổ chức.</p>
-            </div>
-
-            <div class="stats-grid reveal-item delay-1">
-                <div class="stat-card">
-                    <span class="stat-icon">📈</span>
-                    <span class="stat-number">7.9×</span>
-                    <span class="stat-label">ROI có thể đạt 7.9 lần chi phí đầu tư <em>(MetrixGlobal)</em></span>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-icon">🚀</span>
-                    <span class="stat-number">77%</span>
-                    <span class="stat-label">lãnh đạo cho biết coaching tạo tác động đáng kể tới ít nhất một chỉ số
-                        kinh doanh</span>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-icon">💬</span>
-                    <span class="stat-number">70%</span>
-                    <span class="stat-label">người được coaching cải thiện hiệu suất, giao tiếp và quan hệ</span>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-icon">💡</span>
-                    <span class="stat-number">80%</span>
-                    <span class="stat-label">ghi nhận sự gia tăng đáng kể về tự tin lãnh đạo</span>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-icon">🌍</span>
-                    <span class="stat-number">86%</span>
-                    <span class="stat-label">tổ chức báo cáo ROI tích cực từ coaching <em>(ICF)</em></span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Impact Section -->
-    <section class="section quote-sec">
-        <div class="container text-center">
-            <div class="quote-content reveal-item">
-                <h2 style="color: white; margin-bottom: 40px; font-size: clamp(28px, 3vw, 36px);">Tác động đối với bạn
-                </h2>
-                <div class="impact-grid">
-                    <div class="impact-item">✔ Dẫn dắt các cuộc coaching conversation phát triển</div>
-                    <div class="impact-item">✔ Đưa ra feedback và mentoring hiệu quả hơn</div>
-                    <div class="impact-item">✔ Tổ chức các cuộc họp nhóm tạo ra giá trị thực</div>
-                    <div class="impact-item">✔ Giúp nhân viên tự suy nghĩ và chịu trách nhiệm</div>
-                    <div class="impact-item">✔ Xây dựng đội nhóm chủ động và hợp tác</div>
-                    <div class="impact-item">✔ Phát triển phong cách lãnh đạo bền vững hơn</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Target Audience Section -->
-    <section id="audience" class="section audience-sec">
-        <div class="container">
-            <div class="section-header text-center reveal-item">
-                <h2 class="section-title">Ai nên <span class="gradient-text">tham gia</span> <br
-                        class="br-mobile">chương trình này?</h2>
-                <div class="section-divider mx-auto"></div>
-            </div>
-
-            <div class="grid-3">
-                <div class="audience-card reveal-item delay-1">
-                    <div class="audience-visual bg-trust-blue">
-                        <i data-lucide="briefcase" class="giant-icon-light"></i>
-                    </div>
-                    <h3>Lãnh đạo & Quản lý</h3>
-                    <p>Muốn phát triển đội ngũ thay vì phải tự mình giải quyết mọi vấn đề.</p>
-                </div>
-
-                <div class="audience-card reveal-item delay-2">
-                    <div class="audience-visual bg-insight-blue">
-                        <i data-lucide="graduation-cap" class="giant-icon-light"></i>
-                    </div>
-                    <h3>HR / L&D</h3>
-                    <p>Đang xây dựng văn hóa coaching trong tổ chức.</p>
-                </div>
-
-                <div class="audience-card reveal-item delay-3">
-                    <div class="audience-visual bg-insight-purple">
-                        <i data-lucide="flag" class="giant-icon-light"></i>
-                    </div>
-                    <h3>Người dẫn dắt đội nhóm</h3>
-                    <p>Trưởng dự án, trưởng bộ phận, leader trong các tổ chức giáo dục, phi lợi nhuận.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Organizers Section -->
+    <!-- 9. Về tổ chức: Organizers -->
     <section id="organizers" class="section organizers-sec bg-light">
         <div class="container">
             <div class="section-header text-center reveal-item">
@@ -694,7 +620,6 @@
                 </div>
             </div>
 
-            <!-- Partnership Highlights Visuals -->
             <div class="partnership-highlights reveal-item" style="margin-top: 60px; text-align: center;">
                 <div class="partnership-grid">
                     <div class="partnership-item reveal-item delay-1">
@@ -708,10 +633,142 @@
         </div>
     </section>
 
-    <!-- Contact Form Section -->
+
+    <!-- 10. Famous Leaders Quote -->
+    <section class="section quotes-sec bg-light">
+        <div class="container">
+            <div class="section-header text-center reveal-item">
+                <h2 class="section-title">Lãnh đạo nổi tiếng có cần <span class="gradient-text">coach</span> không?</h2>
+                <div class="section-divider mx-auto"></div>
+                <p class="section-subtitle">Có! Các lãnh đạo hàng đầu thế giới cũng làm việc với coach để phát triển bản thân và tổ chức.</p>
+            </div>
+
+            <div class="grid-2x2">
+                <div class="leader-quote-card reveal-item delay-1">
+                    <img src="assets/bill-gates.png" alt="Bill Gates" class="leader-avatar">
+                    <h4>Bill Gates <span class="role-tag">Former CEO Microsoft</span></h4>
+                    <p>"Everyone needs a coach. We all need people who will give us feedback."</p>
+                </div>
+                <div class="leader-quote-card reveal-item delay-2">
+                    <img src="assets/eric-schmidt.png" alt="Eric Schmidt" class="leader-avatar">
+                    <h4>Eric Schmidt <span class="role-tag">Former CEO Google</span></h4>
+                    <p>"The best advice I ever got was to get a coach."</p>
+                </div>
+                <div class="leader-quote-card reveal-item delay-3">
+                    <img src="assets/steve-jobs.png" alt="Steve Jobs" class="leader-avatar">
+                    <h4>Steve Jobs <span class="role-tag">Former CEO Apple</span></h4>
+                    <p>Đã làm việc với Bill Campbell – người được gọi là "The Trillion Dollar Coach".</p>
+                </div>
+                <div class="leader-quote-card reveal-item delay-4">
+                    <img src="assets/sheryl-sandberg.png" alt="Sheryl Sandberg" class="leader-avatar">
+                    <h4>Sheryl Sandberg <span class="role-tag">Former COO Meta</span></h4>
+                    <p>Sử dụng executive coaching để phát triển năng lực lãnh đạo trong những giai đoạn quan trọng của sự nghiệp.</p>
+                </div>
+            </div>
+
+            <div class="text-center reveal-item delay-3"
+                style="margin-top: 50px; max-width: 700px; margin-left: auto; margin-right: auto;">
+                <p style="font-size: 18px; color: var(--color-gray-800);">Điểm chung của những lãnh đạo này không phải là họ yếu kém.<br>
+                    <strong>Ngược lại.</strong><br>
+                    Họ hiểu rằng những người muốn trở nên giỏi hơn luôn cần<br>
+                    <strong><em>Một không gian để suy nghĩ và phản tư.</em></strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. Giá trị nhận được: Benefits + Impact -->
+    <section id="benefits" class="section benefits-sec bg-light">
+        <div class="container">
+            <div class="section-header text-center reveal-item">
+                <h2 class="section-title">Lợi ích gì cho <br class="br-mobile">doanh nghiệp</h2>
+                <div class="section-divider mx-auto"></div>
+                <p class="section-subtitle">Nhiều nghiên cứu quốc tế cho thấy coaching tạo ra tác động rõ rệt tới hiệu quả tổ chức.</p>
+            </div>
+
+            <div class="stats-grid reveal-item delay-1">
+                <div class="stat-card">
+                    <span class="stat-icon">📈</span>
+                    <span class="stat-number">7.9×</span>
+                    <span class="stat-label">ROI có thể đạt 7.9 lần chi phí đầu tư <em>(MetrixGlobal)</em></span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-icon">🚀</span>
+                    <span class="stat-number">77%</span>
+                    <span class="stat-label">lãnh đạo cho biết coaching tạo tác động đáng kể tới ít nhất một chỉ số kinh doanh</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-icon">💬</span>
+                    <span class="stat-number">70%</span>
+                    <span class="stat-label">người được coaching cải thiện hiệu suất, giao tiếp và quan hệ</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-icon">💡</span>
+                    <span class="stat-number">80%</span>
+                    <span class="stat-label">ghi nhận sự gia tăng đáng kể về tự tin lãnh đạo</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-icon">🌍</span>
+                    <span class="stat-number">86%</span>
+                    <span class="stat-label">tổ chức báo cáo ROI tích cực từ coaching <em>(ICF)</em></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section quote-sec">
+        <div class="container text-center">
+            <div class="quote-content reveal-item">
+                <h2 style="color: white; margin-bottom: 40px; font-size: clamp(28px, 3vw, 36px);">Tác động đối với bạn</h2>
+                <div class="impact-grid">
+                    <div class="impact-item">✔ Dẫn dắt các cuộc coaching conversation phát triển</div>
+                    <div class="impact-item">✔ Đưa ra feedback và mentoring hiệu quả hơn</div>
+                    <div class="impact-item">✔ Tổ chức các cuộc họp nhóm tạo ra giá trị thực</div>
+                    <div class="impact-item">✔ Giúp nhân viên tự suy nghĩ và chịu trách nhiệm</div>
+                    <div class="impact-item">✔ Xây dựng đội nhóm chủ động và hợp tác</div>
+                    <div class="impact-item">✔ Phát triển phong cách lãnh đạo bền vững hơn</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 12. Khuyến mãi & Early Bird & 13. FAQ & 14. Form -->
     <section id="contact" class="section contact-sec">
         <div class="container">
-            <div class="contact-grid">
+
+
+            <!-- 13. FAQ Section -->
+            <div id="faq" class="section-header text-center reveal-item" style="margin-top: 80px;">
+                <h2 class="section-title">Câu hỏi <span class="gradient-text">Thường gặp</span></h2>
+                <div class="section-divider mx-auto"></div>
+            </div>
+
+            <div class="faq-container reveal-item delay-1">
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>CoachGEN Leaders là gì?</h3>
+                        <p>Đây là chương trình phát triển năng lực lãnh đạo toàn diện, kết hợp 3 kỹ năng cốt lõi: Coaching (Khai vấn), Mentoring (Trợ hành) và Facilitation (Trợ hành đội nhóm).</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Ai nên tham gia chương trình này?</h3>
+                        <p>Chương trình được thiết kế dành cho các cấp quản lý, lãnh đạo doanh nghiệp, các HRBP/L&D Leader hoặc bất kỳ ai đang dẫn dắt đội nhóm muốn cải thiện hiệu suất thông qua phát triển con người.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Lộ trình học tập như thế nào?</h3>
+                        <p>Chương trình bao gồm 3 ngày đào tạo trực tiếp (Offline) tập trung vào coaching thực chiến, sau đó là 3 tháng đồng hành thực hành có hướng dẫn để chuyển hóa thói quen lãnh đạo.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Tôi có được nhận chứng nhận sau khóa học không?</h3>
+                        <p>Có, những học viên hoàn thành đầy đủ lộ trình đào tạo và thực hành sẽ nhận được chứng nhận chính thức do Tuệ Vấn và TRUST Coaching & Consulting cùng cấp.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Có ưu đãi khi đăng ký theo nhóm không?</h3>
+                        <p>Chúng tôi có chính sách ưu đãi đặc biệt cho các doanh nghiệp đăng ký từ 3 người trở lên. Vui lòng để lại thông tin trong form bên dưới để bộ phận tư vấn liên hệ chi tiết.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 14. Form đăng ký -->
+            <div class="contact-grid" style="margin-top: 100px;">
                 <div class="contact-info reveal-item delay-1">
                     <h2 class="section-title">Thông tin <span class="gradient-text">Học phí</span></h2>
                     
@@ -724,11 +781,9 @@
                             </div>
                         </div>
 
-                        <div class="early-bird-box">
-                            <div class="eb-badge">Early Bird -25%</div>
-                            <div class="eb-info">
-                                <span class="eb-deadline">Trước ngày 01/04/2026</span>
-                            </div>
+                        <div class="promo-dotted-box" style="border: 2px dashed var(--color-insight-blue); background: rgba(47, 183, 200, 0.05); margin-bottom: 20px;">
+                            <div class="early-bird-gradient-badge">Early Bird -25%</div>
+                            <div class="promo-deadline-text" style="color: var(--color-gray-900); border-color: var(--color-insight-blue);">Trước ngày 01/04/2026</div>
                         </div>
 
                         <div class="pricing-divider"></div>
@@ -737,27 +792,23 @@
                             <div class="detail-item">
                                 <i data-lucide="calendar"></i>
                                 <div>
-                                    <span class="detail-label">Khai giảng</span>
-                                    <span class="detail-value">10/04/2026</span>
-                                </div>
-                            </div>
-                            <div class="detail-item">
-                                <i data-lucide="map-pin"></i>
-                                <div>
-                                    <span class="detail-label">Địa điểm</span>
-                                    <span class="detail-value">Hà Nội - TP.HCM</span>
+                                    <span class="detail-label">Thời gian</span>
+                                    <span class="detail-value">
+                                        <strong>10, 11, 12/04</strong> Tại Hà Nội<br>
+                                        <strong>17, 18, 19/04</strong> Tại TP.HCM
+                                    </span>
                                 </div>
                             </div>
                             <div class="detail-item">
                                 <i data-lucide="users"></i>
                                 <div>
                                     <span class="detail-label">Số lượng học viên</span>
-                                    <span class="detail-value">Giới hạn</span>
+                                    <span class="detail-value"><strong>Tối đa 15 người</strong></span>
                                 </div>
                             </div>
                         </div>
                     </div>
-
+                    
                     <div class="contact-methods">
                         <div class="method-item">
                             <i data-lucide="mail"></i>
@@ -765,23 +816,25 @@
                         </div>
                         <div class="method-item">
                             <i data-lucide="phone"></i>
-                            <span>090 xxxx xxx</span>
+                            <span>0902 197 015 (Hà Nội)</span>
+                        </div>
+                        <div class="method-item">
+                            <i data-lucide="phone"></i>
+                            <span>094 757 9696 (TP.HCM)</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="contact-form-wrapper reveal-item delay-2">
                     <div class="form-header">
-                        <h2 class="form-title">Đăng ký để nhận thông tin chi tiết</h2>
-                        <p class="form-subtitle">Hãy để lại thông tin, chúng tôi sẽ liên hệ với bạn về lịch khai giảng và nội dung chương trình.</p>
+                        <h2 class="form-title">Đăng ký tư vấn ngay</h2>
+                        <p class="form-subtitle">Hãy để lại thông tin để nhận brochure chi tiết và lịch khai giảng mới nhất.</p>
                     </div>
                     <form id="coaching-form" class="coaching-form">
                         <div class="form-group">
                             <label for="fullname">Họ và tên</label>
-                            <input type="text" id="fullname" name="fullname" required
-                                placeholder="Nhập họ và tên của bạn">
+                            <input type="text" id="fullname" name="fullname" required placeholder="Nhập họ và tên của bạn">
                         </div>
-
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="email">Email</label>
@@ -792,7 +845,6 @@
                                 <input type="tel" id="phone" name="phone" required placeholder="Số điện thoại">
                             </div>
                         </div>
-
                         <div class="form-group">
                             <label for="role">Vai trò hiện tại</label>
                             <div class="select-wrapper">
@@ -806,15 +858,11 @@
                                 <i data-lucide="chevron-down" class="select-icon"></i>
                             </div>
                         </div>
-
                         <div class="form-group">
                             <label for="message">Nhu cầu của bạn</label>
-                            <textarea id="message" name="message" rows="4"
-                                placeholder="Chia sẻ ngắn gọn về mục tiêu phát triển lãnh đạo của bạn..."></textarea>
+                            <textarea id="message" name="message" rows="4" placeholder="Chia sẻ ngắn gọn về mục tiêu phát triển lãnh đạo của bạn..."></textarea>
                         </div>
-
-                        <button type="submit" class="btn-primary glow-effect btn-submit">Đăng ký thông tin<i
-                                data-lucide="send" style="margin-left: 8px; width: 18px; height: 18px;"></i></button>
+                        <button type="submit" class="btn-primary glow-effect btn-submit">Xác nhận đăng ký <i data-lucide="send" style="margin-left: 8px; width: 18px; height: 18px;"></i></button>
                     </form>
                 </div>
             </div>
@@ -835,9 +883,9 @@
             <div class="footer-col link-col">
                 <h4>Menu</h4>
                 <ul>
-                    <li><a href="#problem">Tại sao</a></li>
-                    <li><a href="#model">Mô hình</a></li>
-                    <li><a href="#journey">Hành trình</a></li>
+                    <li><a href="#problem">Nỗi đau</a></li>
+                    <li><a href="#philosophy">Giải pháp</a></li>
+                    <li><a href="#journey">Cấu trúc</a></li>
                     <li><a href="#contact">Đăng ký</a></li>
                 </ul>
             </div>
@@ -846,7 +894,8 @@
                 <h4>Liên hệ</h4>
                 <ul>
                     <li><a href="mailto:contact@coachgen.vn">contact@coachgen.vn</a></li>
-                    <li><a href="tel:090xxxxxxx">090 xxxx xxx</a></li>
+                    <li><a href="tel:0902197015">0902 197 015 (HN)</a></li>
+                    <li><a href="tel:0947579696">094 757 9696 (HCM)</a></li>
                 </ul>
             </div>
 
@@ -867,7 +916,7 @@
         </div>
     </footer>
 
-    <!-- Main Content Scripts -->
+    <!-- Scripts -->
     <script src="js/main.js"></script>
 </body>
 
