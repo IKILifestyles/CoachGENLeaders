@@ -2,6 +2,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // 1. Initialize Lucide Icons
     lucide.createIcons();
 
+    // 1.1 Set Hero Video Speed
+    const heroVideo = document.getElementById('heroVideo');
+    if (heroVideo) {
+        heroVideo.playbackRate = 0.8;
+    }
+
     // 2. Navbar Scroll Effect
     const navbar = document.getElementById('navbar');
 

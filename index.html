@@ -79,8 +79,8 @@
         <div class="hero-bg">
             <div class="hero-img-overlay"></div>
             <!-- Background Video: Recommended 1920x1080px, muted, autoplay, loop -->
-            <video autoplay muted loop playsinline class="hero-video" poster="assets/hero-human.jpg">
-                <source src="assets/hero-bg.mp4" type="video/mp4">
+            <video autoplay muted loop playsinline class="hero-video" id="heroVideo" poster="assets/hero-human.jpg">
+                <source src="assets/hero-human.mp4" type="video/mp4">
                 <!-- Fallback image if video fails or is unsupported -->
                 <img src="assets/hero-human.jpg" alt="Leadership Coaching" class="hero-main-img" onerror="this.style.display='none'">
             </video>
@@ -90,7 +90,7 @@
 
         <div class="container hero-content">
             <p class="hero-badge reveal-item">Một chương trình thuộc khung CoachGEN Leadership</p>
-            <h1 class="hero-title reveal-item delay-1">CoachGEN <span class="gradient-text">Leaders</span></h1>
+            <h1 class="hero-title reveal-item delay-1"><span class="hero-text-white">CoachGEN</span> <span class="gradient-text">Leaders</span></h1>
             <p class="hero-slogan reveal-item delay-2">Think Better. Grow Stronger. Lead Together.</p>
             <p class="hero-subtext reveal-item delay-3">Phát triển con người và đội nhóm thông qua coaching, mentoring
                 và facilitation.<br>Chương trình hợp tác giữa <strong>Tuệ Vấn × TRUST</strong></p>
@@ -142,9 +142,11 @@
 
             <div class="problem-insight reveal-item delay-3">
                 <blockquote>
-                    Tổ chức có những lãnh đạo rất bận. Nhưng lại thiếu những đội ngũ thực sự mạnh.<br><br>
-                    <strong>Lãnh đạo không phải là người có nhiều câu trả lời nhất.<br>Lãnh đạo là người làm cho những
-                        người khác trở nên giỏi hơn.</strong>
+                    Tổ chức có những lãnh đạo rất bận.<br>
+                    Nhưng lại thiếu những đội ngũ thực sự mạnh.<br>
+                    Và một năng lực nền tảng:<br>
+                    <strong>khả năng phản tư và học hỏi từ chính thực hành lãnh đạo của mình.</strong><br>
+                    Bởi vì lãnh đạo không phải là một vị trí. Lãnh đạo là một thực hành.
                 </blockquote>
             </div>
         </div>
@@ -187,9 +189,10 @@
 
             <div class="text-center reveal-item delay-3"
                 style="margin-top: 50px; max-width: 700px; margin-left: auto; margin-right: auto;">
-                <p style="font-size: 18px; color: var(--color-gray-800);">Điểm chung của những lãnh đạo này không phải
-                    là họ yếu kém. <strong>Ngược lại.</strong><br>Họ hiểu rằng những người muốn trở nên giỏi hơn luôn
-                    cần <em>một không gian để suy nghĩ và phản tư.</em></p>
+                <p style="font-size: 18px; color: var(--color-gray-800);">Điểm chung của những lãnh đạo này không phải là họ yếu kém.<br>
+                    <strong>Ngược lại.</strong><br>
+                    Họ hiểu rằng những người muốn trở nên giỏi hơn luôn cần<br>
+                    <strong><em>Một không gian để suy nghĩ và phản tư.</em></strong></p>
             </div>
         </div>
     </section>
@@ -205,8 +208,8 @@
 
             <div class="philosophy-content reveal-item delay-1">
                 <p class="philosophy-lead">CoachGEN Leadership bắt đầu từ một quan sát đơn giản: Trong những tổ chức
-                    thực sự mạnh, lãnh đạo không phải là người giải quyết mọi vấn đề. <strong>Lãnh đạo là người tạo ra
-                        những cuộc đối thoại giúp người khác suy nghĩ tốt hơn.</strong></p>
+                    thực sự mạnh, lãnh đạo không phải là người giải quyết mọi vấn đề.<br>
+                    <strong>Lãnh đạo là người tạo ra những cuộc đối thoại giúp người khác suy nghĩ tốt hơn.</strong></p>
             </div>
 
             <div class="grid-3">
@@ -229,12 +232,7 @@
                 </div>
             </div>
 
-            <div class="text-center reveal-item delay-4" style="margin-top: 50px;">
-                <p style="font-size: 18px; font-style: italic; color: var(--color-gray-800);">Và một năng lực nền tảng:
-                    <strong>khả năng phản tư và học hỏi từ chính thực hành lãnh đạo của mình.</strong><br>Bởi vì lãnh
-                    đạo không phải là một vị trí. <em>Lãnh đạo là một thực hành.</em>
-                </p>
-            </div>
+            <!-- Removed repetitive section as it's now integrated above -->
         </div>
     </section>
 
@@ -372,6 +370,7 @@
             </div>
             
             <div class="experts-grid">
+                <!-- Expert 1: Nguyễn Mạnh Hải -->
                 <div class="expert-card reveal-item delay-1">
                     <img src="assets/logo-tuevan (1).png" alt="Tuệ Vấn Logo" class="expert-org-logo" onerror="this.style.display='none'">
                     <div class="expert-image-wrapper">
@@ -381,10 +380,52 @@
                         <p class="expert-label">ICF PCC - Tuệ Vấn</p>
                         <h3>Nguyễn Mạnh Hải <img src="assets/ICF PCC.png" alt="ICF PCC" class="icf-badge" onerror="this.style.display='none'"></h3>
                         <p class="expert-title">Đồng sáng lập Tuệ Vấn</p>
-                        <p class="expert-bio">Coach chứng nhận PCC của ICF và ITCA Senior Practitioner của EMCC với hơn 2.000 giờ coaching. Hơn 20 năm kinh nghiệm quản lý, Thạc sĩ MBA tại IE Business School.</p>
+                        <ul class="expert-bio" style="list-style: none; padding: 0;">
+                            <li>• Coach chứng nhận PCC của ICF và ITCA Senior Practitioner của EMCC</li>
+                            <li>• Hơn 2.000 giờ coaching thực tế</li>
+                            <li>• Hơn 20 năm kinh nghiệm quản lý, Thạc sĩ MBA tại IE Business School</li>
+                        </ul>
                     </div>
                 </div>
+
+                <!-- Expert 2: Đặng Minh Sơn -->
                 <div class="expert-card reveal-item delay-2">
+                    <img src="assets/logo-trust.png" alt="TRUST Logo" class="expert-org-logo" onerror="this.style.display='none'">
+                    <div class="expert-image-wrapper">
+                        <img src="assets/expert-4.jpg" alt="Đặng Minh Sơn" class="expert-img" onerror="this.style.display='none'">
+                    </div>
+                    <div class="expert-info">
+                        <p class="expert-label">ICF PCC - TRUST</p>
+                        <h3>Đặng Minh Sơn <img src="assets/ICF PCC.png" alt="ICF PCC" class="icf-badge" onerror="this.style.display='none'"></h3>
+                        <p class="expert-title">Đồng sáng lập TRUST Coaching & Consulting</p>
+                        <ul class="expert-bio" style="list-style: none; padding: 0;">
+                            <li>• Chuyên gia Khai vấn – Professional Certified Coach (ICF-PCC)</li>
+                            <li>• Chuyên gia Marketing - Bán hàng & Dịch vụ</li>
+                            <li>• Nhà đào tạo về Kỹ năng Lãnh đạo và Quản trị Doanh nghiệp</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Expert 3: Đinh Ngọc Minh Trang -->
+                <div class="expert-card reveal-item delay-3">
+                    <img src="assets/logo-tuevan (1).png" alt="Tuệ Vấn Logo" class="expert-org-logo" onerror="this.style.display='none'">
+                    <div class="expert-image-wrapper">
+                        <img src="assets/expert-3.jpg" alt="Đinh Ngọc Minh Trang" class="expert-img" onerror="this.style.display='none'">
+                    </div>
+                    <div class="expert-info">
+                        <p class="expert-label">TEIQue™ Coach - Tuệ Vấn</p>
+                        <h3>Đinh Ngọc Minh Trang</h3>
+                        <p class="expert-title">Đồng sáng lập Tuệ Vấn</p>
+                        <ul class="expert-bio" style="list-style: none; padding: 0;">
+                            <li>• Chuyên gia Khai vấn Trí tuệ Cảm xúc – TEIQue™ Certified Coach (LPL)</li>
+                            <li>• Chuyên gia Trợ hành Đội nhóm – Agile Team Facilitation (ICP-ATF)</li>
+                            <li>• Huấn luyện viên Yoga RYT 200 và Inside Flow</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Expert 4: Cecilia Anh Vân -->
+                <div class="expert-card reveal-item delay-4">
                     <img src="assets/logo-trust.png" alt="TRUST Logo" class="expert-org-logo" onerror="this.style.display='none'">
                     <div class="expert-image-wrapper">
                         <img src="assets/expert-2.jpg" alt="Cecilia Anh Vân" class="expert-img" onerror="this.style.display='none'">
@@ -393,7 +434,11 @@
                         <p class="expert-label">ICF PCC - TRUST</p>
                         <h3>Cecilia Anh Vân <img src="assets/ICF PCC.png" alt="ICF PCC" class="icf-badge" onerror="this.style.display='none'"></h3>
                         <p class="expert-title">Đồng sáng lập TRUST Coaching & Consulting</p>
-                        <p class="expert-bio">Chuyên gia định vị bản thân với hơn 20 năm trong lĩnh vực truyền thông và 10 năm phát triển con người. Tiên phong về Nghệ thuật viết Content từ tim.</p>
+                        <ul class="expert-bio" style="list-style: none; padding: 0;">
+                            <li>• Chuyên gia định vị bản thân với hơn 20 năm truyền thông</li>
+                            <li>• Hơn 10 năm kinh nghiệm phát triển con người</li>
+                            <li>• Tiên phong về Nghệ thuật viết Content từ tim</li>
+                        </ul>
                     </div>
                 </div>
             </div>
