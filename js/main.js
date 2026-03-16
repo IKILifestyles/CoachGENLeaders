@@ -138,4 +138,73 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // =============================================
+    // 6. Testimonial Slider
+    // =============================================
+    const testimonialSlider = document.getElementById('testimonialSlider');
+    if (testimonialSlider) {
+        const slides = document.querySelectorAll('.testimonial-slide');
+        const dotsContainer = document.getElementById('testimonialDots');
+        let currentSlide = 0;
+        const slideCount = slides.length;
+
+        // Create dots
+        slides.forEach((_, index) => {
+            const dot = document.createElement('div');
+            dot.classList.add('dot');
+            if (index === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => goToSlide(index));
+            dotsContainer.appendChild(dot);
+        });
+
+        const dots = document.querySelectorAll('.testimonial-dots .dot');
+
+        function goToSlide(index) {
+            currentSlide = index;
+            const translateX = -(currentSlide * 100);
+            testimonialSlider.style.transform = `translateX(${translateX}%)`;
+            
+            // Update dots
+            dots.forEach(dot => dot.classList.remove('active'));
+            dots[currentSlide].classList.add('active');
+        }
+
+        function nextSlide() {
+            let nextIndex = (currentSlide + 1) % slideCount;
+            goToSlide(nextIndex);
+        }
+
+        function prevSlide() {
+            let prevIndex = (currentSlide - 1 + slideCount) % slideCount;
+            goToSlide(prevIndex);
+        }
+
+        const prevBtn = document.getElementById('testimonialPrev');
+        const nextBtn = document.getElementById('testimonialNext');
+        
+        if (prevBtn) prevBtn.addEventListener('click', prevSlide);
+        if (nextBtn) nextBtn.addEventListener('click', nextSlide);
+
+        // Auto slide every 8 seconds
+        let slideInterval = setInterval(nextSlide, 8000);
+
+        function resetInterval() {
+            clearInterval(slideInterval);
+            slideInterval = setInterval(nextSlide, 8000);
+        }
+
+        if (prevBtn) prevBtn.addEventListener('click', resetInterval);
+        if (nextBtn) nextBtn.addEventListener('click', resetInterval);
+
+        // Pause on hover or touch
+        testimonialSlider.parentElement.addEventListener('mouseenter', () => clearInterval(slideInterval));
+        testimonialSlider.parentElement.addEventListener('mouseleave', () => {
+            slideInterval = setInterval(nextSlide, 8000);
+        });
+        testimonialSlider.parentElement.addEventListener('touchstart', () => clearInterval(slideInterval));
+        testimonialSlider.parentElement.addEventListener('touchend', () => {
+            slideInterval = setInterval(nextSlide, 8000);
+        });
+    }
+
 });
