@@ -2668,11 +2668,11 @@ select {
 .early-bird-gradient-badge {
     background: linear-gradient(135deg, #2FB7C8 0%, #7C3AED 100%);
     color: #ffffff;
-    padding: 10px 24px;
-    border-radius: 50px;
+    padding: 14px 32px;
     font-weight: 800;
-    font-size: 18px;
+    font-size: 26px;
     white-space: nowrap;
+    border-radius: 50px;
 }
 
 .promo-deadline-text {
@@ -2817,8 +2817,8 @@ select {
     }
 
     .early-bird-gradient-badge {
-        font-size: 16px;
-        padding: 8px 20px;
+        font-size: 22px;
+        padding: 10px 28px;
     }
 
     .promo-deadline-text {
@@ -2909,6 +2909,16 @@ select {
     .hero-badge {
         font-size: 12px;
         padding: 6px 14px;
+    }
+
+    .hero-cta .btn-primary {
+        white-space: normal;
+        height: auto;
+        padding: 16px 24px;
+        line-height: 1.4;
+        text-align: center;
+        width: 100%;
+        max-width: 360px;
     }
 }
 
